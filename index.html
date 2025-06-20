@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Launching App...</title>
+  <script>
+    // Try to open the app
+    window.location = "Xvantage://home"; // <-- Your custom scheme
+
+    // Fallback to App Store after delay
+    setTimeout(function () {
+      window.location = "https://apps.apple.com/app/id6451442235"; // replace with your app's App Store link
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>If nothing happens, <a href="https://apps.apple.com/app/id6451442235">click here to download the app</a>.</p>
+</body>
+</html>
